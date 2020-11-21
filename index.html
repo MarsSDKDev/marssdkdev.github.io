@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>Hexo</title>
+    <title>ECUnionSDK�����ĵ�</title>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,23 +21,16 @@
         <nav class="header-nav">
             
             <a href="/" class="header-nav-link" >
-                Home
+                首页
             </a>
             
 
             
             <a href="/archives" class="header-nav-link">
-                Archives
+                归档
             </a>
             
 
-            
-            <a href="/tags" class="header-nav-link">
-                Tags
-            </a>
-            
-
-            
         </nav>
     </div>
 </header>
@@ -49,7 +42,7 @@
             <span></span>
         </div>
         <div class="mobile-nav-title">
-            <a href="/" class="mobile-nav-title-link">John Doe's Blog</a>
+            <a href="/" class="mobile-nav-title-link">ECUnionSDK's Blog</a>
         </div>
 
     </div>
@@ -57,19 +50,19 @@
         <ul class="mobile-menu-list">
             <li class="mobile-menu-item">
                 <i class="iconfont icon-home"></i>
-                <a href="/" class="mobile-nav-link">Home</a>
+                <a href="/" class="mobile-nav-link">首页</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-archive"></i>
-                <a href="/archives" class="mobile-nav-link">Archives</a>
+                <a href="/archives" class="mobile-nav-link">归档</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-tag"></i>
-                <a href="/tags" class="mobile-nav-link">Tags</a>
+                <a href="/tags" class="mobile-nav-link">标签</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-about"></i>
-                <a href="/about/" class="mobile-nav-link">About</a>
+                <a href="/about/" class="mobile-nav-link">关于</a>
             </li>
         </ul>
     </nav>
@@ -80,7 +73,7 @@
     
         <article class="post-abstract">
             <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/11/21/ECUnionDoc_1.0.7.07/"></a></h2>
+                <h2><a class="post-title-link" href="/2020/11/21/ECUnionDoc_1.0.7.07/">ECUnionSDK(1.0.7.07)接入文档</a></h2>
             </div>
             <div class="post-meta">
                 <span class="post-time">2020-11-21</span>
@@ -88,9 +81,7 @@
             </div>
             <div class="post-content">
                 
-                    <h1 id="ECUnionSDK-1-0-7-07-接入文档"><a href="#ECUnionSDK-1-0-7-07-接入文档" class="headerlink" title="ECUnionSDK(1.0.7.07)接入文档"></a>ECUnionSDK(1.0.7.07)接入文档</h1><hr>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
-<h2 id="接入方只需要接好接口，SDK要我方二次打包后才会生效。"><a href="#接入方只需要接好接口，SDK要我方二次打包后才会生效。" class="headerlink" title="接入方只需要接好接口，SDK要我方二次打包后才会生效。"></a>接入方只需要接好接口，SDK要我方二次打包后才会生效。</h2><h3 id="1-说明"><a href="#1-说明" class="headerlink" title="1.说明"></a>1.说明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.当你检查确认接入无误后（确认接口有调用到），将接好包体传给我方人员。</span><br><span class="line">2.接入方不需要考虑应用权限适配，SDK内部逻辑已经适配处理</span><br><span class="line">3.一个广告位id对应一个广告实例。不可以一个广告实例使用多个广告位id。</span><br><span class="line">4.类文件所在路径不要使用包名作为路径，因为在二次打包时修改包名会出问题。比如包名为com.aaa.bbb、类名为MainActivtiy.java。类路径就不能为com.aaa.bbb.MainActivtiy.java。如果出现该情况，请重新命名路径。</span><br></pre></td></tr></table></figure>
+                    <h2 id="接入方只需要接好接口，SDK要我方二次打包后才会生效。"><a href="#接入方只需要接好接口，SDK要我方二次打包后才会生效。" class="headerlink" title="接入方只需要接好接口，SDK要我方二次打包后才会生效。"></a>接入方只需要接好接口，SDK要我方二次打包后才会生效。</h2><h3 id="1-说明"><a href="#1-说明" class="headerlink" title="1.说明"></a>1.说明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.当你检查确认接入无误后（确认接口有调用到），将接好包体传给我方人员。</span><br><span class="line">2.接入方不需要考虑应用权限适配，SDK内部逻辑已经适配处理</span><br><span class="line">3.一个广告位id对应一个广告实例。不可以一个广告实例使用多个广告位id。</span><br><span class="line">4.类文件所在路径不要使用包名作为路径，因为在二次打包时修改包名会出问题。比如包名为com.aaa.bbb、类名为MainActivtiy.java。类路径就不能为com.aaa.bbb.MainActivtiy.java。如果出现该情况，请重新命名路径。</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-搭建开发环境"><a href="#2-搭建开发环境" class="headerlink" title="2.搭建开发环境"></a>2.搭建开发环境</h3><h4 id="2-1-SDK本地搭建方式"><a href="#2-1-SDK本地搭建方式" class="headerlink" title="2.1 SDK本地搭建方式"></a>2.1 SDK本地搭建方式</h4><p>1)拷贝libs目录的SDK文件到您项目的libs目录下。</p>
 <p>2)配置AndroidManifest.xml</p>
@@ -108,13 +99,12 @@
 </ul>
 <p>步骤1: 在项目的根build.gradle中，找到对应标签标签，添加远程库地址<br> <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> allprojects &#123;</span><br><span class="line">    repositories &#123;	</span><br><span class="line">        maven &#123; url &#x27;https://jitpack.io&#x27; &#125;//就是这货</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>步骤2:找到游戏导出的游戏模块工程，找到对应的模块build.gradle,找到对应的标签，添加依赖<br> <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> dependencies &#123;</span><br><span class="line">	</span><br><span class="line">implementation &#x27;com.github.MarsSDKDev:ECUnionSDK:1.0.7.07&#x27; //这行是SDK的依赖，有更新的时候，会通知更改版本号即可。</span><br><span class="line">implementation &#x27;com.github.MarsSDKDev:ECUnionSDKHelper:0.0.8&#x27;//这行是辅助测试的模块，加入后可以有测试广告呼出，运营人员需要出母包的时候，!!!记得把这行注释!!!</span><br><span class="line"></span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure></p>
-<p> <strong>再次提醒，出母包的时候，需要把测试模块注释，以免造成来回出包</strong></p>
 <ul>
 <li><strong>国内网络环境（网络环境二选一）</strong></li>
 </ul>
 <p>步骤1: 在项目的根build.gradle中，找到对应标签标签，添加远程库地址<br> <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">allprojects &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">        mavenLocal()</span><br><span class="line">        maven&#123; url &#x27;https://maven.aliyun.com/repository/jcenter&#x27;&#125;</span><br><span class="line">        maven&#123; url &#x27;https://maven.aliyun.com/repository/google&#x27;&#125;</span><br><span class="line">        maven &#123; url &#x27;https://maven.aliyun.com/repository/public&#x27; &#125;</span><br><span class="line">        mavenCentral()</span><br><span class="line">        maven &#123; url &#x27;https://jitpack.io&#x27; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">buildscript &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">        mavenLocal()</span><br><span class="line">        maven&#123; url &#x27;https://maven.aliyun.com/repository/jcenter&#x27;&#125;</span><br><span class="line">        maven&#123; url &#x27;https://maven.aliyun.com/repository/google&#x27;&#125;</span><br><span class="line">        maven &#123; url &#x27;https://maven.aliyun.com/repository/public&#x27; &#125;</span><br><span class="line">        mavenCentral()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p> 步骤2:与国外网络环境的步骤2一致</p>
-<p>完成环境的搭建后，在android studio中同步项目(android studio工具栏中有有一个’Sync Project’的按钮,点击一下即可)</p>
+<p>完成环境的搭建后，在android studio中同步项目(android studio工具栏中有有一个’Sync Project’的按钮,点击一下即可)<br><strong>再次提醒，出母包的时候，需要把测试模块注释，以免造成来回出包</strong></p>
 <h3 id="3-1-SDK的Application初始化（必接）"><a href="#3-1-SDK的Application初始化（必接）" class="headerlink" title="3.1 SDK的Application初始化（必接）"></a>3.1 SDK的Application初始化（必接）</h3><p>ECUnionSDK类:</p>
 <table>
 <thead>
@@ -454,11 +444,11 @@
             
             2020
             &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
-            <a target="_blank" href="https://github.com/iJinxin">John Doe</a>
+            <a target="_blank" href="https://www.baidu.com">ECUnionSDK</a>
         </p>
         <p class="theme-info">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
-            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+            Powered by <a target="_blank" href="https://www.baidu.com">EC</a>  |  
+            <a target="_blank" href="https://www.baidu.com">ECUnionSDK</a>
         </p>
     </div>
 </footer>
