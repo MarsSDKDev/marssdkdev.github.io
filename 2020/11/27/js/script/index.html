@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>ECUnionSDKDoc</title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link" >
+                首页
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                归档
+            </a>
+            
+
+            
+
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">ECUnionSDKDev's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">首页</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">归档</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">标签</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">关于</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title"></h2>
+            <div class="post-meta">
+                <span class="post-time">2020-11-27</span>
+                
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            var slider;
+var images = [
+"images/ground.png",
+"images/clouds.png",
+"images/ground-bottom.png",
+"images/hole.png",
+"images/mountain.png",
+"images/rocks.png",
+"images/sky-bg.jpg",
+"images/sweat.png",
+"images/texty-sign.png",
+"images/worker.png",
+"images/working-sign.png"
+];
+
+var index = 0;
+var transitionSpeed = 500;
+var imageIntervals = 5000;
+
+var startIntervals;
+var intervalSetTime;
+var contentOpen = false;
+
+$(document).ready(function() {
+    
+
+
+           
+                                         
+	
+    $(function() {
+		
+        $.preload(images, {
+            init: function(loaded, total) {
+            		
+            },
+			
+            loaded_all: function(loaded, total) { 
+             
+                            
+                $('#indicator').fadeOut('slow', function() {
+                   
+                    function swing(){
+                                   if($('html').hasClass('ie')){
+                                   if(!$('.swing').hasClass('down')){
+                                   
+                           $('.swing').animate({rotate:'190deg', left: 330,
+    top: 430},1500,function(){
+    $('.swing').toggleClass('down');
+    });    
+                                   }else{
+                                   
+                                    $('.swing').animate({rotate:'40deg', left: 190,
+    top: 35},1500,function(){
+    $('.swing').toggleClass('down');
+    });    
+                                   
+                                   }}else{
+                                   $('.swing').toggleClass('right');
+                                   }
+                       
+         
+                        $('.sweat').toggleClass('show');
+                        
+                        setTimeout(swing, 1500);
+                    }
+                    swing(); 
+        
+                   
+                    $('#clouds').pan({
+                        fps: 30, 
+                        speed: 1.8, 
+                        dir: 'left', 
+                        depth: 300
+                    });
+                     
+                   
+                                
+                    $('.init').fadeIn(function(){
+                        $(this).removeClass('init');
+                      
+                            
+                        setTimeout(function(){
+                            
+                            $('.mountain').plaxify({
+                                "xRange":20,
+                                "yRange":0
+                            }) ;
+                                     
+                                        
+                              
+                            $.plax.enable(); 
+                            
+                           
+ 
+         
+                            
+                        },500)   
+                                  
+                                  
+                                      
+                                       
+                    })
+                                         
+                                        
+                                        
+					
+                });
+            }
+        });
+    });
+ 
+ 
+
+})
+
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+        
+            <a class="next" href="/2020/11/27/js/preloader/">
+                <span class="nav-default"></span>
+                <span class="nav-mobile">下一篇</span>
+                <i class="iconfont icon-next"></i>
+            </a>
+        
+    
+</div>
+<div id="comment-container"></div>
+    </div>
+</div>
+<footer class="footer-social">
+    
+
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+            2020
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://www.baidu.com">ECUnionSDKDev</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://baidu.com">ECUnion</a>  | 
+            <a target="_blank" href="https://www.baidu.com">ECUnionSDK</a>
+        </p>
+    </div>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    
+
+</script>
+</html>
